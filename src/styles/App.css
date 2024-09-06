@@ -1,0 +1,30 @@
+.header-custom-background {
+    background-color: #17153B;
+}
+
+footer {
+  background-color: #17153B;
+  color: #ffffff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: auto;
+}
+
+footer a {
+  margin: 0.5rem 1rem;
+  color: #e6f671;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin-top: 0.5rem;
+  color: #ffffff;
+}
