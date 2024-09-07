@@ -1,0 +1,46 @@
+/* About component styles. */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh; /* Make section taller. */
+    padding: 2rem; /* Add more space around content. */
+    margin-bottom: 2rem; /* Move the section higher. */
+    margin-top: 4rem;
+    flex-direction: row; /* Keep image and text side by side. */
+    text-align: left; /* Align text to the left in larger screens. */
+  }
+  
+  .about-description {
+    flex: 1;
+    padding: 2rem; /* Increase padding for more space inside the box. */
+    border: 2px solid #274c77; /* Border around the description. */
+    border-radius: 10px; /* Rounded corners. */
+    background-color: #8b8c89; /* Background color of the box. */
+    max-width: 62.5rem; /* Increase max width for larger content area. */
+    text-align: left; /* Align text to the left for larger screens. */
+    position: relative; /* Ensure the description box stays in place. */
+  }
+  
+  .about-description h2 {
+    font-size: 1.75rem; /* Increase font size to better fit the box. */
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-overflow: ellipsis; /* Add ellipsis if text overflows. */
+  }
+  
+  .about-description p {
+    font-size: 1.25rem;
+    color: #ffffff;
+  }
+  
+  /* Adjustments for smaller screens. */
+  @media screen and (max-width: 992px) {
+    .about {
+      flex-direction: column; /* Stack image and text vertically. */
+      text-align: center; /* Center text on smaller screens. */
+    }
+    .about-description {
+      width: 100%; /* Ensure description takes full width. */
+    }
+  }

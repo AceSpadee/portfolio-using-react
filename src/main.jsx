@@ -7,6 +7,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/main.css";
 // Import App, About components.
 import App from "./App";
+import About from "./pages/About";
+import NotFound from "./pages/NotFound";
 // import About from "./pages/About";
 // Render the App component inside the Router component.
 createRoot(document.getElementById("root")).render(
@@ -14,8 +16,9 @@ createRoot(document.getElementById("root")).render(
     <Router>
       <Routes>
         <Route path="/" element={<App />}>
-        {/* <Route index element={<About />} />
-        <Route path="About" element={<About />} /> */}
+        <Route index element={<About />} />
+        <Route path="About" element={<About />} />
+        <Route path="*" element={<NotFound />} />
         </Route>
       </Routes> 
     </Router>
