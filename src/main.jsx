@@ -8,6 +8,7 @@ import "./styles/main.css";
 // Import App, About components.
 import App from "./App";
 import About from "./pages/About";
+import Resume from "./pages/Resume";
 import NotFound from "./pages/NotFound";
 // import About from "./pages/About";
 // Render the App component inside the Router component.
@@ -18,6 +19,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/" element={<App />}>
         <Route index element={<About />} />
         <Route path="About" element={<About />} />
+        <Route path="Resume" element={<Resume />} />
         <Route path="*" element={<NotFound />} />
         </Route>
       </Routes> 

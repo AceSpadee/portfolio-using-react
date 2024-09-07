@@ -18,6 +18,20 @@ export default function NavTabs({ handlePageChange }) {
         >
           About
         </Link>
+        <li className="nav-item">
+        {/* Add a Link component to set the href to "/Resume" */}
+        <Link
+          to="/Resume"
+          className={
+            location.pathname === "/Resume"
+              ? "nav-link active text-secondary"
+              : "nav-link text-white"
+          }
+          onClick={() => handlePageChange("Resume")}
+        >
+          Resume
+        </Link>
+      </li>
       </li>
     </ul>
   );
