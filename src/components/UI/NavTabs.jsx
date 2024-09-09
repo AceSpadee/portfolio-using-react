@@ -31,8 +31,36 @@ export default function NavTabs({ handlePageChange }) {
         >
           Resume
         </Link>
+        <li className="nav-item">
+        {/* Add a Link component to set the href to "/Portfolio" */}
+        <Link
+          to="/Portfolio"
+          className={
+            location.pathname === "/Portfolio"
+              ? "nav-link active text-secondary"
+              : "nav-link text-white"
+          }
+          onClick={() => handlePageChange("Portfolio")}
+        >
+          Portfolio
+        </Link>
+        <li className="nav-item">
+        {/* Add a Link component to set the href to "/Contact" */}
+        <Link
+          to="/Contact"
+          className={
+            location.pathname === "/Contact"
+              ? "nav-link active text-secondary"
+              : "nav-link text-white"
+          }
+          onClick={() => handlePageChange("Contact")}
+        >
+          Resume
+        </Link>
       </li>
       </li>
+      </li>
+    </li>
     </ul>
   );
 }
