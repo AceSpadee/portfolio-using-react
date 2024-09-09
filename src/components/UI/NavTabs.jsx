@@ -55,7 +55,7 @@ export default function NavTabs({ handlePageChange }) {
           }
           onClick={() => handlePageChange("Contact")}
         >
-          Resume
+          Contact
         </Link>
       </li>
       </li>

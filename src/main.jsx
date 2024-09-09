@@ -10,6 +10,7 @@ import App from "./App";
 import About from "./pages/About";
 import Resume from "./pages/Resume";
 import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 // import About from "./pages/About";
 // Render the App component inside the Router component.
@@ -22,6 +23,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="About" element={<About />} />
         <Route path="Resume" element={<Resume />} />
         <Route path="Portfolio" element={<Portfolio />} />
+        <Route path="Contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
         </Route>
       </Routes> 
