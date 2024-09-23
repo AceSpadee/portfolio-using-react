@@ -1,4 +1,4 @@
-import "../Styles/About.css";
+import "../styles/About.css";
 
 // Export the About component to the router in main.jsx.
 export default function About() {
