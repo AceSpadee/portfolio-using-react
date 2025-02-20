@@ -7,10 +7,10 @@ export default function Resume() {
   return (
     <div className="resume-container">
       <div className="resume-download">
-      <img className="container" src={resume} alt="Resume" />
+        <img className="resume-image" src={resume} alt="Resume" />
         <a
-          href="../assets/myResume.png"
-          download="My_Resume.png"  
+          href={resume}
+          download="My_Resume.png"
           className="resume-link"
         >
           Download Resume

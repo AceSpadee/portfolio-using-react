@@ -1,21 +1,16 @@
-// Import the useState hook from React.
-import { useState } from "react";
-// Import the Contact.css file.
 import "../styles/Contact.css";
-// Import the EmailForm component.
-import EmailForm from "../components/EmailForm";
+
 // Export the Contact component to the router in main.jsx.
 export default function Contact() {
-  // Declare a variable formData and a function setFormData with the useState hook.
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  // Return the JSX for the Contact component.
   return (
-    <div className="contact-container text-center">
-      <EmailForm formData={formData} setFormData={setFormData} />
+    <div className="contact-container">
+      <div className="contact-info-container">
+        <h3>Other Ways to Reach Me</h3>
+        <div className="contact-info">
+          <p>Email: <a href="mailto:ptniversn@gmail.com">ptniversn@gmail.com</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/peyton-iverson/" target="_blank" rel="noopener noreferrer">My LinkedIn</a></p>
+        </div>
+      </div>
     </div>
   );
 }

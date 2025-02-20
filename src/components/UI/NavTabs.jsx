@@ -42,7 +42,7 @@ export default function NavTabs({ handlePageChange }) {
           }
           onClick={() => handlePageChange("Portfolio")}
         >
-          Portfolio
+          Projects
         </Link>
         <li className="nav-item">
         {/* Add a Link component to set the href to "/Contact" */}

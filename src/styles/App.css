@@ -1,17 +1,35 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
 .header-custom-background {
     background-color: #17153B;
 }
-
 footer {
   background-color: #17153B;
   color: #ffffff;
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically */
+  text-align: center; /* Ensures text stays centered */
   margin-top: auto;
+  width: 100%;
+  height: 100px; /* Adjust height as needed */
 }
 
 footer a {

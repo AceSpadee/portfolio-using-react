@@ -1,12 +1,39 @@
-.container {
-    display: flex; /* Enable Flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 1100px;
-    width: 850px;
-  }
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 2rem;
+}
   
-  img {
-    max-width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
-  }
+.resume-download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.resume-image {
+  width: 850px;
+  height: auto;
+  max-width: 100%;
+}
+
+.resume-link {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 10px 20px;
+  background-color: #17153B;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.resume-link:hover {
+  background-color: #e6f671;
+  color: #17153B;
+}
