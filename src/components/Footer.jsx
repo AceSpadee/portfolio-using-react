@@ -2,7 +2,7 @@
 export default function Footer() {
   return (
     <footer id="footer">
-      <div className="col col1">
+      <div>
         <a href="https://github.com/AceSpadee" target="_blank" rel="noopener noreferrer">
             Github repo
         </a>
