@@ -1,15 +1,26 @@
-/* Skills component styles. */
 .skills-container {
-    display: flex; /* Arrange icons horizontally. */
-    align-items: center; /* Vertically center icons. */
-    gap: 1.5rem; /* Space between icons. */
-    padding: 0.75rem; /* Padding around icons. */
-    border-radius: 1rem; /* Rounded corners for the container. */
-    background-color: #e7ecef;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0.75rem;
+  border-radius: 1rem;
+  background-color: #e7ecef;
+}
+
+.skill-icon {
+  width: 7rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .skills-container {
+      gap: 1rem;
+      padding: 0.75rem;
   }
-  
+
   .skill-icon {
-    width: 7rem;
-    height: 3rem; /* Increase image size. */
-    border-radius: 0.5rem; /* Add rounded corners to the image. */
+      width: 6rem;
+      height: 2.5rem;
   }
+}

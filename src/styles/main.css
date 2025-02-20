@@ -9,3 +9,9 @@ html,
   flex-direction: column;
   background-color: #e7ecef;
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+}

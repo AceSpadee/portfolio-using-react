@@ -4,63 +4,43 @@ import { Link, useLocation } from "react-router-dom";
 export default function NavTabs({ handlePageChange }) {
   const location = useLocation();
   return (
-    <ul className="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+    <ul className="nav-tabs-container">
       <li className="nav-item">
-        {/* Add a Link component to set the href to "/About" */}
         <Link
           to="/About"
-          className={
-            location.pathname === "/About"
-              ? "nav-link active text-secondary"
-              : "nav-link text-white"
-          }
+          className={location.pathname === "/About" ? "nav-link active text-secondary" : "nav-link text-white"}
           onClick={() => handlePageChange("About")}
         >
-          About
+          Home
         </Link>
-        <li className="nav-item">
-        {/* Add a Link component to set the href to "/Resume" */}
+      </li>
+      <li className="nav-item">
         <Link
           to="/Resume"
-          className={
-            location.pathname === "/Resume"
-              ? "nav-link active text-secondary"
-              : "nav-link text-white"
-          }
+          className={location.pathname === "/Resume" ? "nav-link active text-secondary" : "nav-link text-white"}
           onClick={() => handlePageChange("Resume")}
         >
           Resume
         </Link>
-        <li className="nav-item">
-        {/* Add a Link component to set the href to "/Portfolio" */}
+      </li>
+      <li className="nav-item">
         <Link
           to="/Portfolio"
-          className={
-            location.pathname === "/Portfolio"
-              ? "nav-link active text-secondary"
-              : "nav-link text-white"
-          }
+          className={location.pathname === "/Portfolio" ? "nav-link active text-secondary" : "nav-link text-white"}
           onClick={() => handlePageChange("Portfolio")}
         >
           Projects
         </Link>
-        <li className="nav-item">
-        {/* Add a Link component to set the href to "/Contact" */}
+      </li>
+      <li className="nav-item">
         <Link
           to="/Contact"
-          className={
-            location.pathname === "/Contact"
-              ? "nav-link active text-secondary"
-              : "nav-link text-white"
-          }
+          className={location.pathname === "/Contact" ? "nav-link active text-secondary" : "nav-link text-white"}
           onClick={() => handlePageChange("Contact")}
         >
           Contact
         </Link>
       </li>
-      </li>
-      </li>
-    </li>
     </ul>
   );
 }

@@ -37,3 +37,14 @@
   background-color: #e6f671;
   color: #17153B;
 }
+
+@media screen and (max-width: 992px) {
+  .resume-image {
+    width: 100%;
+  }
+
+  .resume-link {
+    font-size: 1.1rem;
+    padding: 8px 16px;
+  }
+}
