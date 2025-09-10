@@ -1,25 +1,105 @@
-html, body {
-  height: 100%;
+/* normal gradient color */
+/* html, body {
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
+  background: linear-gradient(to bottom, #1e3c72, #2a5298);
+} */
+
+/* multi-colored gradient color */
+ html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
+  background: radial-gradient(circle at 30% 30%, #3b7bd4, transparent),
+              radial-gradient(circle at 70% 70%, #ff6b6b, transparent),
+            #121212;
+  color: white;
+}
+
+/* Make sure the container properly aligns */
+.content-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
-#app {
+/* Ensure sections take up full screen height and align content */
+.about, .placeholder-section {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;  /* Ensure text is centered */
+  padding: 4rem;
 }
 
-main {
-  flex: 1;
+.about {
+  background: transparent;
 }
 
-.header-custom-background {
-    background-color: #17153B;
+/* Adjust placeholder styling for better spacing */
+.placeholder-section { 
+  background: transparent;
+  color: #fff;
+  width: 100%;
 }
 
+/* potentially remove later, not in use? */
+/* Navbar should be fixed at the top */
+.navbar {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #0d1b2a;
+  padding: 1rem 3rem;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+  background: rgba(13, 27, 42, 0.9); /* Slightly transparent */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar ul li {
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar ul li:hover {
+  color: #90e0ef;
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Footer tweaks to maintain alignment */
 #footer {
   background-color: #17153B;
   color: #ffffff;
@@ -28,9 +108,9 @@ main {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: auto;
-  max-width: 100%;
+  width: 100%; /* Ensure full width */
   height: 100px;
+  margin-top: auto;
 }
 
 footer a {
@@ -46,4 +126,17 @@ footer a:hover {
 footer p {
   margin-top: 0.5rem;
   color: #ffffff;
+}
+
+/* Responsive Fixes */
+@media screen and (max-width: 992px) {
+  .about {
+    padding: 3rem 1.5rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
 }

@@ -10,7 +10,7 @@ export default function Footer() {
             Linked in
         </a>
         <p>
-          2024. All Rights Reserved to Peyton Iverson
+          2024. All Rights Reserved to name
         </p>
       </div>
     </footer>
