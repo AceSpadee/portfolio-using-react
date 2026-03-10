@@ -1,6 +1,7 @@
 import Project1 from "../../assets/img3.png";
 import Weather from "../../assets/img2.png";
 import Techblog from "../../assets/img1.png";
+import RoofTopCat from "../../assets/img5.png";
 // import Parkfinder from "../../assets/img4.png";
 
 const projectsData = [
@@ -21,6 +22,12 @@ const projectsData = [
     image: Techblog,
     repoLink: "https://github.com/AceSpadee/Tech-Blog-website",
     liveLink: "https://tech-blog-website-775s.onrender.com",
+  },
+  {
+    title: "Rooftop-Cat",
+    image: RoofTopCat,
+    repoLink: "https://github.com/AceSpadee/ambient-loader",
+    liveLink: "https://ambient-loader.onrender.com",
   },
   // {
   //   title: "Park-Finder",
