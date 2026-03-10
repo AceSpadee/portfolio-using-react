@@ -27,7 +27,6 @@ export default function SideNav() {
         <nav className="side-nav">
             <ul>
                 <li><a href="#about" className={activeSection === "about" ? "active" : ""}>About</a></li>
-                <li><a href="#resume" className={activeSection === "resume" ? "active" : ""}>Resume</a></li>
                 <li><a href="#projects" className={activeSection === "projects" ? "active" : ""}>Projects</a></li>
                 <li><a href="#contact" className={activeSection === "contact" ? "active" : ""}>Contact</a></li>
             </ul>
