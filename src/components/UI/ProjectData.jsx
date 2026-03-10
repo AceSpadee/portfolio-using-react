@@ -3,7 +3,7 @@ import Weather from "../../assets/img2.png";
 import Techblog from "../../assets/img1.png";
 import RoofTopCat from "../../assets/img5.png";
 import MusicPlayer from "../../assets/MusicHome.png";
-// import Parkfinder from "../../assets/img4.png";
+import PathTracker from "../../assets/img4.png";
 
 const projectsData = [
   {
@@ -41,12 +41,13 @@ const projectsData = [
     liveLink: "",
     private: true,
   },
-  // {
-  //   title: "Park-Finder",
-  //   image: Parkfinder,
-  //   repoLink: "https://github.com/AceSpadee/search-park",
-  //   liveLink: "https://www.djinkingdom.com",
-  // }
+  {
+    title: "Path-Tracker",
+    image: PathTracker,
+    repoLink: "",
+    liveLink: "",
+    private: true,
+  }
 ];
 
 export default projectsData;

@@ -1,21 +1,29 @@
-// Import useState from react and Outlet from react-router-dom.
-import { useState } from "react";
-import { Outlet } from "react-router-dom";
-// Import App.css.
 import "./styles/App.css";
+
 // Import Header and Footer components.
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-// Export the function App to the main.jsx file for rendering.
+import SideNav from "./components/UI/SideNav.jsx";
+import Footer from "./components/Footer.jsx";
+import Portfolio from "./pages/Portfolio.jsx";
+import HomePage from "./pages/HomePage.jsx";
+import Contact from "./pages/Contact.jsx";
+
 export default function App() {
-  // Declare a variable currentPage and a function setCurrentPage with the useState hook.
-  const [currentPage, setCurrentPage] = useState("About");
-  // Return the JSX for the App component.
   return (
     <div id="app">
-      <Header currentPage={currentPage} handlePageChange={setCurrentPage} />
-      <main className="mx-3">
-        <Outlet />
+      <SideNav />
+      <main className="content-container">
+        <section id="about" className="about-section">
+          <HomePage />
+        </section>
+        
+        <section id="projects" className="placeholder-section">
+          <h2>My Projects</h2>
+          <Portfolio />
+        </section>
+
+        <section id="contact" className="placeholder-section">
+          <Contact />
+        </section>
       </main>
       <Footer />
     </div>

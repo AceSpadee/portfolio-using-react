@@ -1,0 +1,136 @@
+/* without glass-container */
+/* .about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 4rem;
+  text-align: center;
+  background: linear-gradient(135deg, #1e1e2f, #274c77);
+} */
+
+/* with glass-container ========== darker */
+/* .about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 4rem;
+  text-align: center;
+  background: #121212;
+  color: white;
+}
+
+.glass-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+} */
+
+/* with glass-container ========== lighter */
+/* remove the about later. currently being overwritten in app */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 4rem;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(18, 18, 18, 0.8), rgba(30, 30, 30, 0.6));
+  color: white;
+}
+
+/* potentially remove the border, transition, and glass-container hover || adjust the box-shadow if others removed */
+
+.glass-container {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(25px);
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  transition: border 0.3s ease-in-out;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 60rem;
+  text-align: center;
+  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+.glass-container:hover {
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 10px 50px rgba(255, 255, 255, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.about-description {
+  padding: 2.5rem;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  max-width: 50rem; /* Adjusted for better centering */
+  text-align: center;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
+}
+
+/* Scale effect when scrolling into view */
+.about-description:hover {
+  transform: scale(1.02);
+}
+
+.about-description h2 {
+  font-size: 2.5rem;
+  color: #caf0f8;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.about-description h2:hover {
+  color: #48cae4; /* Lighter color on hover */
+}
+
+.about-description p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-button {
+  margin-top: 1.5rem;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  background: #48cae4;
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background: #00b4d8;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1.5rem;
+  }
+
+  .about-description {
+    width: 95%;
+    padding: 2rem;
+  }
+  
+  .about-description h2 {
+    font-size: 2rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
