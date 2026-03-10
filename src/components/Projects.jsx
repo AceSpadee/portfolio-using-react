@@ -19,21 +19,36 @@ export default function Projects() {
               </div>
               <div className="card-img-overlay">
                 <h2 className="card-title">{project.title}</h2>
-                <a href={project.repoLink} className="btn btn-custom">
-                  Repo
-                </a>
-                <a href={project.liveLink} className="btn btn-custom">
-                  Live
-                </a>
+
+                {project.private ? (
+                  <p className="private-label">🔒 Private Project</p>
+                ) : (
+                  <>
+                    <a href={project.repoLink} className="btn btn-custom">
+                      Repo
+                    </a>
+                    <a href={project.liveLink} className="btn btn-custom">
+                      Live
+                    </a>
+                  </>
+                )}
               </div>
+
               <div className="card-body">
                 <h2 className="card-title">{project.title}</h2>
-                <a href={project.repoLink} className="btn btn-custom mr-2 mb-2">
-                  Repo
-                </a>
-                <a href={project.liveLink} className="btn btn-custom ml-2 mb-2">
-                  Live
-                </a>
+
+                {project.private ? (
+                  <p className="private-label">🔒 Private Project</p>
+                ) : (
+                  <>
+                    <a href={project.repoLink} className="btn btn-custom">
+                      Repo
+                    </a>
+                    <a href={project.liveLink} className="btn btn-custom">
+                      Live
+                    </a>
+                  </>
+                )}
               </div>
             </div>
           </div>

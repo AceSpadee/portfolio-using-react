@@ -28,6 +28,9 @@ SO THAT I can assess whether they're a good candidate for an open position
 
  <img src="./src/assets/img3.png" width="720" heigth="480">
 
+ <img src="./src/assets/img5.png" width="720" height="480">
+
+ <img src="./src/assets/MusicHome.png" width="720" height="480">
 
  ## License
 
