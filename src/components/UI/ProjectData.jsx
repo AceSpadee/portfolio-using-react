@@ -38,8 +38,9 @@ const projectsData = [
     title: "Music-Player",
     image: MusicPlayer,
     repoLink: "",
-    liveLink: "",
+    liveLink: "https://music-player-s59b.onrender.com",
     private: true,
+    mockSite: "Frontend Demo Only – No Backend",
   },
   {
     title: "Path-Tracker",
@@ -47,6 +48,7 @@ const projectsData = [
     repoLink: "",
     liveLink: "",
     private: true,
+    mockSite: "🔒 Private Project – Code & Demo Not Public"
   }
 ];
 

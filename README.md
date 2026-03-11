@@ -36,7 +36,9 @@ A browser-based endless runner inspired by the Google Chrome dinosaur game. Play
 Technologies: JavaScript, HTML, CSS, React
 
 ## Music Player
-Private Project
+Private Project, Frontend is hosted
+<br>
+[Live Link](https://music-player-s59b.onrender.com)
 <br>
 <img src="./src/assets/MusicHome.png" width="720">
 <br>
