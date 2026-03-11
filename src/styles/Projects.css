@@ -1,15 +1,15 @@
 /* Project card component styles. */
 .card-custom {
-    background-color: #8b8c89;
-    border-color: #17153B;
-    border-width: 3px;
-    border-style: solid;
-    position: relative;
-    overflow: hidden;
-    margin: 0 auto; /* Center the card. */
-    max-width: 300px; /* Adjust card width. */
-  }
-  
+  background-color: #8b8c89;
+  border-color: #17153B;
+  border-width: 3px;
+  border-style: solid;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto 40px auto; /* adds bottom spacing */
+  max-width: 300px;
+}
+
   .card-body {
     display: none; /* Hide by default for larger screens. */
     color: #ffffff;
@@ -100,6 +100,11 @@
   
   /* Styles for smaller screens (mobile devices). */
   @media screen and (max-width: 992px) {
+    .vessel {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
     .card-body {
       display: flex;
       flex-direction: column;
